@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jamesbakersmith01.github.io/gh-pages",
+  "homepage": "https://jamesbakersmith01.github.io/portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
@@ -11,12 +11,11 @@
     "serve": "^11.0.0"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve --single ./build",
-    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
